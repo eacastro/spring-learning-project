@@ -1,47 +1,35 @@
 package com.exercise.service.impl;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.exercise.domain.User;
+import com.exercise.repository.UserRepository;
 import com.exercise.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {
+	
+		
+	private final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
 
 	@Override
 	public List<User> getAllUsers() {
-		var u1 = new User();
-		var u2 = new User();
-		var u3 = new User();
-		var u4 = new User();
-		var u5 = new User();		
-		
-		u1.setName("Edisson");
-		u1.setLastName("Castro");
-		u1.setEmail("edissoncastro.11@hotamil.com");
-		
-		u2.setName("Nubia");
-		u2.setLastName("Piza");
-		u2.setEmail("napiza@misena.edu.co");
-		
-		u3.setName("John");
-		u3.setLastName("Doe");
-		u3.setEmail("john.doe@mail.com");
-		
-		u4.setName("Beto");
-		u4.setLastName("Fya");
-		u4.setEmail("beto.fya@fakemail.com");
-		
-		u5.setName("Ricardo");
-		u5.setLastName("Bustos");
-		u5.setEmail("ricardo.bustos@arra-in.co");
-		
-		var users = Arrays.asList(u1, u2, u3, u4, u5);
-		
-		return users;	
+//		var allUsers = userRepository.findAll();
+//		var users = new ArrayList<User>();
+//		
+//		if (allUsers != null) {
+//			log.info("Se recupera iterable desde la interfaz repository");
+//			allUsers.forEach(users :: add);
+//		}
+//		
+//		return users;
+		return null;
 	}
 
 }

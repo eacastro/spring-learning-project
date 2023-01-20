@@ -28,6 +28,10 @@
         </table>
     </div>
     
+    <div th:unless="${users != null and !users.empty}" class="container">
+    	<p>No se ha obtenido información de usuarios registrados</p>
+    </div>
+    
     <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 
